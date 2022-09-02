@@ -9,10 +9,6 @@ const schema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  state: {
-    type: Boolean,
-    required: true,
-  },
 });
 
 export default mongoose.model("Category", schema);

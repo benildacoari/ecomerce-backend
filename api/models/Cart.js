@@ -7,10 +7,14 @@ const schema = new mongoose.Schema({
   },
   articles: [
     {
-      article: mongoose.Schema.Types.ObjectId,
+      type: mongoose.Schema.Types.ObjectId,
       ref: 'Product',
     },
   ],
+  customer:{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Product',
+  }
 });
 
 export default mongoose.model("Cart", schema);
